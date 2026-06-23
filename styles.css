@@ -186,15 +186,20 @@ em { font-style: italic; color: var(--text); }
 
 /* Hero visual */
 .hero__visual { position: relative; display: grid; place-items: center; }
-.motif { width: min(100%, 360px); height: auto; overflow: visible; }
-.motif .ring { fill: none; stroke: var(--border-strong); stroke-width: 1.5; stroke-dasharray: 4 8; }
-.motif .ring--outer { animation: spin 60s linear infinite; transform-origin: 160px 160px; }
-.motif .ring--mid { animation: spin 40s linear infinite reverse; transform-origin: 160px 160px; }
-.motif .orbit { transform-origin: 160px 160px; }
-.motif .orbit--1 { animation: spin 9s linear infinite; }
-.motif .orbit--2 { animation: spin 6s linear infinite reverse; }
-.motif .gear { animation: spin 18s linear infinite; transform-box: fill-box; transform-origin: center; }
-.motif .wave { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85; stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 3s var(--ease) forwards 0.4s; filter: drop-shadow(0 0 6px var(--accent-soft)); }
+.motif { width: min(100%, 400px); height: auto; overflow: visible; }
+.motif .ring { fill: none; stroke: var(--border); stroke-width: 1.5; transform-box: view-box; transform-origin: 180px 180px; }
+.motif .ring--outer { stroke: var(--border-strong); opacity: 0.55; }
+.motif .ring--mid { stroke-dasharray: 2 12; animation: spin 72s linear infinite; }
+.motif .ring--inner { stroke-dasharray: 2 9; opacity: 0.8; animation: spin 52s linear infinite reverse; }
+.motif .ticks { opacity: 0.7; }
+.motif .orbit { transform-box: view-box; transform-origin: 180px 180px; }
+.motif .orbit--1 { animation: spin 26s linear infinite; }
+.motif .orbit--2 { animation: spin 18s linear infinite reverse; }
+.motif .orbit--3 { animation: spin 12s linear infinite; }
+.motif .orbit circle { filter: drop-shadow(0 0 6px var(--accent)); }
+.motif .core__body { filter: drop-shadow(0 6px 18px color-mix(in srgb, var(--accent) 55%, transparent)); }
+.motif .halo { transform-box: view-box; transform-origin: 180px 180px; animation: breathe 7s ease-in-out infinite; }
+@keyframes breathe { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
 .chip-cloud { position: absolute; inset: 0; pointer-events: none; }
 .chip-cloud .chip { position: absolute; }
 .chip-cloud .chip:nth-child(1) { top: 4%; left: 8%; animation: float 7s ease-in-out infinite; }
