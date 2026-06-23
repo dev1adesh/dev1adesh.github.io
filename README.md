@@ -30,11 +30,8 @@ adeshps_website/
 - **Colors/theme**: the `:root` and `[data-theme="light"]` blocks at the top of `styles.css` control every color via CSS variables (`--accent`, `--bg`, etc.).
 - **Résumé**: replace `assets/Adesh-Partap-Singh-Resume.pdf` (keep the same filename, or update the two links in `index.html`).
 
-### ⚠️ Update before launch
-Your **GitHub** link is set to `https://github.com/dev1adesh`. Only the **LinkedIn** link is still a placeholder:
-- `https://www.linkedin.com/in/adeshpartapsingh`
-
-Search `index.html` for `linkedin.com` and replace it with your real LinkedIn URL.
+### Social links
+Both are set: GitHub → `https://github.com/dev1adesh`, LinkedIn → `https://www.linkedin.com/in/adeshpartapsingh/`. They appear in the hero and the contact section.
 
 ## 3. Preview locally
 
