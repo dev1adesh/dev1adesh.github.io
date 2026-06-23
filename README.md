@@ -31,11 +31,10 @@ adeshps_website/
 - **Résumé**: replace `assets/Adesh-Partap-Singh-Resume.pdf` (keep the same filename, or update the two links in `index.html`).
 
 ### ⚠️ Update before launch
-The GitHub and LinkedIn links are **placeholders** and appear in three places (hero, contact buttons, footer is text‑only):
-- `https://github.com/adeshpartapsingh`
+Your **GitHub** link is set to `https://github.com/dev1adesh`. Only the **LinkedIn** link is still a placeholder:
 - `https://www.linkedin.com/in/adeshpartapsingh`
 
-Search `index.html` for `github.com` and `linkedin.com` and replace with your real profile URLs.
+Search `index.html` for `linkedin.com` and replace it with your real LinkedIn URL.
 
 ## 3. Preview locally
 
@@ -53,22 +52,22 @@ python3 -m http.server 8000      # then open http://localhost:8000
 
 You chose **GitHub Pages** (free, with automatic HTTPS). Easiest path is a **user site** repo.
 
-1. Create a GitHub account if you don't have one. Your username matters below — call it `<USERNAME>`.
+1. Create a GitHub account if you don't have one. Your username matters below — call it `dev1adesh`.
 2. Create a **new public repository** named exactly:
    ```
-   <USERNAME>.github.io
+   dev1adesh.github.io
    ```
    (A repo with this exact name is served at the root of your GitHub Pages — simplest for a personal site.)
 3. Upload these files to the repo (drag‑and‑drop in the GitHub web UI works, or use git — see below). Make sure `index.html`, `CNAME`, and `.nojekyll` are in the **root** of the repo.
 4. In the repo, go to **Settings → Pages**. Under **Build and deployment**, set **Source = Deploy from a branch**, **Branch = `main`** (folder `/root`), then **Save**.
-5. Wait ~1 minute, then visit `https://<USERNAME>.github.io` to confirm the site is live.
+5. Wait ~1 minute, then visit `https://dev1adesh.github.io` to confirm the site is live.
 
 ### Push with git (optional, instead of drag‑and‑drop)
 This folder is already a local git repo with an initial commit. Just point it at your GitHub repo:
 
 ```bash
 cd adeshps_website
-git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io.git
+git remote add origin https://github.com/dev1adesh/dev1adesh.github.io.git
 git branch -M main
 git push -u origin main
 ```
@@ -99,9 +98,9 @@ You keep the domain at GoDaddy and just point its DNS at GitHub Pages. **Do not 
    | AAAA  | `@`         | `2606:50c0:8001::153`                   |
    | AAAA  | `@`         | `2606:50c0:8002::153`                   |
    | AAAA  | `@`         | `2606:50c0:8003::153`                   |
-   | CNAME | `www`       | `<USERNAME>.github.io`                  |
+   | CNAME | `www`       | `dev1adesh.github.io`                  |
 
-   The four `A` records (IPv4) are required; the four `AAAA` records (IPv6) are recommended. The `www` `CNAME` makes `www.adeshpartapsingh.com` redirect to your apex domain. Replace `<USERNAME>` with your GitHub username.
+   The four `A` records (IPv4) are required; the four `AAAA` records (IPv6) are recommended. The `www` `CNAME` makes `www.adeshpartapsingh.com` redirect to your apex domain. Replace `dev1adesh` with your GitHub username.
    *(These IPs are GitHub's official, documented Pages addresses.)*
 
 ### C) Wait, then enable HTTPS
@@ -112,7 +111,7 @@ You keep the domain at GoDaddy and just point its DNS at GitHub Pages. **Do not 
 ```bash
 # Apex should return the four GitHub IPs:
 dig adeshpartapsingh.com +noall +answer
-# www should resolve to <USERNAME>.github.io:
+# www should resolve to dev1adesh.github.io:
 dig www.adeshpartapsingh.com +noall +answer
 ```
 Then open `https://adeshpartapsingh.com` in a browser. Done. 🎉
