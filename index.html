@@ -13,8 +13,34 @@
   <meta property="og:title" content="Adesh Partap Singh — Mechatronics Engineer" />
   <meta property="og:description" content="Controls, embedded systems, power electronics, robotics, and software. Tesla · Motorola Solutions · Neutron Controls · ASI." />
   <meta property="og:url" content="https://adeshpartapsingh.com/" />
-  <meta property="og:image" content="https://adeshpartapsingh.com/assets/projects/wheelchair-capstone.jpg" />
+  <meta property="og:image" content="https://adeshpartapsingh.com/assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Adesh Partap Singh — Mechatronics Engineer, New Grad 2026" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data for search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adesh Partap Singh",
+    "url": "https://adeshpartapsingh.com/",
+    "image": "https://adeshpartapsingh.com/assets/og-card.png",
+    "jobTitle": "Mechatronics Engineer",
+    "email": "mailto:adesh26singh@gmail.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Waterloo"
+    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Waterloo", "addressRegion": "ON", "addressCountry": "CA" },
+    "sameAs": [
+      "https://github.com/dev1adesh",
+      "https://www.linkedin.com/in/adeshpartapsingh/"
+    ],
+    "knowsAbout": ["Control Systems", "Embedded Systems", "Robotics", "Power Electronics", "PCB Design", "FPGA", "PLC Programming", "Computer Vision"]
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -78,7 +104,8 @@
           <p class="hero__tagline">
             I build at the intersection of <strong>mechanics, electronics, and software</strong> —
             real-time control systems, embedded firmware, power electronics, and intelligent
-            robotic platforms.
+            robotic platforms. Four internships at <strong>Tesla, Motorola, Neutron Controls, and ASI</strong>;
+            every project below is real hardware or shipped code.
           </p>
 
           <div class="hero__cta">
@@ -166,7 +193,7 @@
     <section class="stats" aria-label="Highlights">
       <div class="container stats__grid">
         <div class="stat reveal"><span class="stat__num" data-count="4">4</span><span class="stat__label">Engineering Internships</span></div>
-        <div class="stat reveal"><span class="stat__num" data-count="14">14</span><span class="stat__suffix">+</span><span class="stat__label">Projects Shipped</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="18">18</span><span class="stat__suffix">+</span><span class="stat__label">Projects Shipped</span></div>
         <div class="stat reveal"><span class="stat__prefix">$</span><span class="stat__num" data-count="5">5</span><span class="stat__suffix">K</span><span class="stat__label">Funding Raised</span></div>
         <div class="stat reveal"><span class="stat__num" data-count="100">100</span><span class="stat__suffix">+</span><span class="stat__label">Startup Signups</span></div>
       </div>
@@ -193,7 +220,7 @@
               My sweet spot is taking a system from <em>model to firmware to bring-up</em>: tuning control
               loops in MATLAB/Simulink, writing the embedded C/C++ that runs them, designing the boards in
               Altium, and building the software that monitors it all. I like hard, multidisciplinary problems —
-              self-balancing robots, power electronics, real-time telemetry, and AI tooling.
+              self-balancing robots, CPU–FPGA co-design, power electronics, real-time telemetry, and AI tooling.
             </p>
 
             <div class="about__expertise">
@@ -406,7 +433,7 @@
           <div class="contact__bg" aria-hidden="true"><div class="blob blob--3"></div></div>
           <span class="eyebrow">05 — Contact</span>
           <h2 class="section__title">Let's build something</h2>
-          <p class="contact__sub">Open to full-time <strong>2026</strong> roles in controls, embedded, robotics, and hardware-adjacent software. The fastest way to reach me is email.</p>
+          <p class="contact__sub">Open to full-time roles in <strong>controls, embedded, robotics, and hardware-adjacent software</strong> — available from <strong>May 2026</strong>. The fastest way to reach me is email; I reply within a day.</p>
 
           <div class="contact__methods">
             <a class="contact__method" href="mailto:adesh26singh@gmail.com">
@@ -465,6 +492,8 @@
         <span class="chip chip--cat" id="modalCat"></span>
         <h3 id="modalTitle"></h3>
         <p id="modalDesc"></p>
+        <div id="modalHighlights"></div>
+        <div class="modal__links" id="modalLinks"></div>
         <div class="chips" id="modalTags"></div>
       </div>
     </div>
